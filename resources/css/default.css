@@ -9,19 +9,6 @@ body {
   background-color: #1961AC;
 }
 
-@media only screen and (max-width: 1570px) {
-  #cards {
-    /* flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-    flex-wrap: wrap;
-  }
-
-  #card {
-    margin-bottom: 1.5rem;
-  }
-}
-
 a {
   text-decoration: inherit;
   color: inherit;
@@ -81,7 +68,8 @@ article p {
 }
 
 article iframe {
-  margin-bottom: 5rem;
+  width: 1366px;
+  height: 768px;
 }
 
 .neighbor-ap-tutorial {
@@ -184,6 +172,114 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   margin-top: 5rem;
   margin-bottom: 2.5rem ;
+}
+
+@media only screen and (max-width: 1570px) {
+  #cards {
+    flex-wrap: wrap;
+  }
+
+  #card {
+    margin-bottom: 1.5rem;
+  }
+
+  .neighbor-ap-tutorial {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    }
+
+    article iframe {
+      width: 1024px;
+      height: 576px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+  article {
+    margin: 1.5rem 0 0 5rem;
+    max-width: 65%;
+  }
+
+  #article-img {
+    max-width: 110%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+@media only screen and (max-width: 1050px) {
+  .img-container p {
+    display: none;
+  }
+
+  .title {
+    margin-left: 2rem;
+    text-align: center; 
+  }
+
+  article iframe {
+    width: 768px;
+    height: 432px;
+  }
+}
+
+
+@media only screen and (max-width: 785px) {
+  .title {
+    font-size: 24px;
+  }
+
+  article iframe {
+    width: 512px;
+    height: 288px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .title {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .title {
+    margin-left: 0;
+    font-size: 24px;
+  }
+
+  footer {
+    margin-bottom: 5rem ;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  article {
+    margin: 1.5rem 0 0 1.75rem;
+    max-width: 80%;
+  }
+
+  article iframe {
+    width: 384px;
+    height: 216px;
+  }
+
+  #article-img {
+    flex-wrap: wrap;
+    width: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
 }

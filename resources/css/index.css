@@ -23,7 +23,7 @@ nav img {
   width: 15rem;
 }
 
-main h1{
+.main-title {
   color: #ffffff;
   display: flex;
   justify-content: center;
@@ -39,7 +39,7 @@ main h1{
 #card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 362px;
   height: 492px;
@@ -52,6 +52,7 @@ main h1{
 }
 
 #card h1 {
+  margin: 2.5rem;
   font-size: 32px;
 }
 
@@ -73,4 +74,29 @@ main h1{
 #card:hover img{
   opacity: 100%;
   transition: all 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 770px) {
+  .main-title {
+    text-align: center;
+  }
+
+  #card {
+    width: 262px;
+    height: 350px;
+  }
+
+  #card img {
+    width: 214px;
+  }
+
+  #card h1 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .main-title {
+    font-size: 32px;
+  }
 }
