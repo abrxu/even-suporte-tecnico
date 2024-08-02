@@ -76,6 +76,23 @@ article iframe {
   height: 768px;
 }
 
+.plano {
+  flex-direction: row !important;
+  justify-content: center !important;
+  flex-wrap: wrap;
+  max-width: 75% !important;
+}
+
+.titulo-equipamento {
+  margin: 1.5rem;
+}
+
+
+.container-equipamento {
+  margin: 1rem;
+  width: 350px;
+}
+
 .neighbor-ap-tutorial {
   display: flex;
 }
@@ -256,6 +273,10 @@ footer {
   .title {
     margin-left: 0;
     font-size: 24px;
+  }
+
+  .container-equipamento p {
+    text-align: center;
   }
 
   footer {
